@@ -17,6 +17,12 @@ Attend this in-depth, hands-on security workshop with Calico and AWS experts to 
 kubectl apply -R -f workshops/001 
 ```
 
+### Browse Demo App
+
+```bash
+kubectl port-forward -n dmz service/frontend 9000:80
+```
+
 ### Enable L7 Logging for Services
 
 ```bash
