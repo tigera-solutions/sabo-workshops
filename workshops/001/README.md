@@ -17,13 +17,6 @@ Attend this in-depth, hands-on security workshop with Calico and AWS experts to 
 kubectl apply -R -f workshops/001 
 ```
 
-### Curl AWS Metadata service
-
-```bash
-TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
-&& curl -H "X-aws-ec2-metadata-token: $TOKEN" -v http://169.254.169.254/latest/meta-data/
-```
-
 ### Enable L7 Logging for Services
 
 ```bash
@@ -40,4 +33,11 @@ kubectl annotate svc cartservice -n trusted projectcalico.org/l7-logging=true
 
 ```bash
 kubectl exec -it netshoot -- bash
+```
+
+### Curl AWS Metadata service
+
+```bash
+TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
+&& curl -H "X-aws-ec2-metadata-token: $TOKEN" -v http://169.254.169.254/latest/meta-data/
 ```
