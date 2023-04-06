@@ -35,3 +35,9 @@ kubectl annotate svc recommendationservice -n trusted projectcalico.org/l7-loggi
 kubectl annotate svc adservice -n trusted projectcalico.org/l7-logging=true
 kubectl annotate svc cartservice -n trusted projectcalico.org/l7-logging=true
 ```
+
+### Interactive access to Pod
+
+```bash
+kubectl exec -it netshoot -- bash
+```
