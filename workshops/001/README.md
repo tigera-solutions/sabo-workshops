@@ -11,6 +11,12 @@ Attend this in-depth, hands-on security workshop with Calico and AWS experts to 
 
 ## Notes
 
+### Deploy Workshop Content
+
+```bash
+kubectl apply -R -f workshops/001 
+```
+
 ### Curl AWS Metadata service
 
 ```bash
