@@ -10,6 +10,10 @@ Attend this in-depth, hands-on, AKS-focused security workshop with Microsoft Azu
 
 ## Notes
 
+```
+kubectl apply -f workshops/002/01-felix
+```
+
 ### Image Assurance
 
 Detect vulnerabilities in container images at build and runtime.
