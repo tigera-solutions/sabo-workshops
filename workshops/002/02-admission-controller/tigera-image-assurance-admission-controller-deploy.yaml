@@ -1,0 +1,191 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: tigera-image-assurance-admission-controller-certs
+  namespace: tigera-image-assurance
+type: Opaque
+data:
+  tls.crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURoakNDQW02Z0F3SUJBZ0lKQVBieHk1amd5MlJWTUEwR0NTcUdTSWIzRFFFQkN3VUFNRkl4Q3pBSkJnTlYKQkFZVEFrZENNUXd3Q2dZRFZRUUlEQU5WVTBFeEREQUtCZ05WQkFjTUExVlRRVEVQTUEwR0ExVUVDZ3dHVkdsbgpaWEpoTVJZd0ZBWURWUVFMREExSlZDQkVaWEJoY25SdFpXNTBNQ0FYRFRJek1EVXdOREV6TlRZeE1Wb1lEekl4Ck1qTXdOREV3TVRNMU5qRXhXakJTTVFzd0NRWURWUVFHRXdKSFFqRU1NQW9HQTFVRUNBd0RWVk5CTVF3d0NnWUQKVlFRSERBTlZVMEV4RHpBTkJnTlZCQW9NQmxScFoyVnlZVEVXTUJRR0ExVUVDd3dOU1ZRZ1JHVndZWEowYldWdQpkRENDQVNJd0RRWUpLb1pJaHZjTkFRRUJCUUFEZ2dFUEFEQ0NBUW9DZ2dFQkFNMjF0dlJzQnZva2c1UU45L1VnCnZHYW1ud21XcGp5aWNvU0ZRQTZvU2hQYzhyb2QvMjhSaUR6aC9peXBwMmZqT1ZQTkVOcGw5Ykh3RmlOb0Nwbi8KYTBRQ3BjMnpTSXZYSzhYTUpIWE9taEpqZWxLZU5CZElCa0dWbkVpVzl5bkRWK2V6QXRrZmE0NjF2ZW5VcElDegptcU9ocnpuTFVySkNwbGQxd3g2ODdvdnpLK1hnMnRWSWYvZm8zd3Z5WXYycDJUa1dlYW1COWtBaXFzREk2VFk5ClMzMTBaSEg0c0dVYTVNNVJ2TDJuRnRnaWpLRU0xTjkxVVNtRFJ2QnRwM3VWVFQ3U2QxMldUaHUva2tlNDZtYjMKMlVSam1lUG5zL3BJNjRvbVQ1U2dycDFiZC9sZ0NuRks2UXhWMGdWNHRNZ3BXRHdoTGM4RFNqWTVMeE5aMlg3aApITVVDQXdFQUFhTmRNRnN3V1FZRFZSMFJCRkl3VUlKT2RHbG5aWEpoTFdsdFlXZGxMV0Z6YzNWeVlXNWpaUzFoClpHMXBjM05wYjI0dFkyOXVkSEp2Ykd4bGNpMXpaWEoyYVdObExuUnBaMlZ5WVMxcGJXRm5aUzFoYzNOMWNtRnUKWTJVdWMzWmpNQTBHQ1NxR1NJYjNEUUVCQ3dVQUE0SUJBUUFEVUs4UWFFQ1NnV2xpU0p2U3JkVmhNeURYOFFnVwpRdVh4YUIrZjJZOU9SSm5DU01zS3Rtcjl5aGQ4TTR5RGpWcE1hV0E0Y2ErTzR2d1ozYzUwbDZ2RHhYMEgxNHk2CjZtT1hzdGswbnd6NnJKTmI5OTNRWkNEWWZjTWZnVlo4a0RHTDZBRW5ZSExnZFZ1bWpSMWZXdk5kY3paMEU4aUYKZTA0aXRoQjBFOHRpY09xdVJmOCt0YnNZK2V5ei81TUpjMllkQnJVOXBSZ1VHeVNRcGRvaXpROWJHZ1lFTjVnKwo2dndockhBYTVPL2g0bVZROTlIeCtua0h4bkNIWk84aGxqV1E4UTVvU2pkTnR3TjI3YTJ0dHRJY2JRa2JNaU1iCk4wUFUvR3N1SENjQ3RJYTl1UnlMRkZyYW0xNzg1ejZSL1FJdEV6WTBJS0xiMEttOU9oVzJFd25TCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K 
+  tls.key: LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2UUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktjd2dnU2pBZ0VBQW9JQkFRRE50YmIwYkFiNkpJT1UKRGZmMUlMeG1wcDhKbHFZOG9uS0VoVUFPcUVvVDNQSzZIZjl2RVlnODRmNHNxYWRuNHpsVHpSRGFaZld4OEJZagphQXFaLzJ0RUFxWE5zMGlMMXl2RnpDUjF6cG9TWTNwU25qUVhTQVpCbFp4SWx2Y3B3MWZuc3dMWkgydU90YjNwCjFLU0FzNXFqb2E4NXkxS3lRcVpYZGNNZXZPNkw4eXZsNE5yVlNILzM2TjhMOG1MOXFkazVGbm1wZ2ZaQUlxckEKeU9rMlBVdDlkR1J4K0xCbEd1VE9VYnk5cHhiWUlveWhETlRmZFZFcGcwYndiYWQ3bFUwKzBuZGRsazRidjVKSAp1T3BtOTlsRVk1bmo1N1A2U091S0prK1VvSzZkVzNmNVlBcHhTdWtNVmRJRmVMVElLVmc4SVMzUEEwbzJPUzhUCldkbCs0UnpGQWdNQkFBRUNnZ0VBRFFVWFUxa1RCL29QcWV0SWFtZHNCVU0raGFqWFZMY2pjR2ZPcWg3VXNYVW0KbDhrV1JiMWlWaGduc2tQNnFJU2xPRHllZUhSRG5NT0pZeXhPbjNpZkhXcmRlNnVCUi9pU2VLNTNFRTNIU3FxcApMMWw4Q28wd2VDNHoraFEwQ0p5b2o2MnczSFUwcFkrek9YMlArK1ZpUUVFWGloem9Xd2dFNXp3NDRWVXI5QWVPCitGWEtiRVJjbkZoaFdNVWVjc1c2bXlQNUZ1eHhhK0lXdE5NQmNjMm5rK09waFloYndKNDd5dFU0TXRTeEhOKzAKT1pkNVZDTWo1akpKb05SUkxldU81eVB5TnhBVTJ5NHV6eWJyL0gyZVdWekJYTFc4cy9RV2NsUi9NdjhiU3hCZgptd21MN0RWYXpqSVlla3c0dzNGaEViQllQUnVudUo5MHNGMDhGb0ZLOFFLQmdRRDRKcVFabjR6WDZzRUw5Mkd0CkQ5NWcvZjFHYll5QjN1b1RpNEdyRDJDOUxXbkdoR2pWS1pTN2xVcDJyTHhWYUN6aGpWMjRtd3JkZ3pkbDdqWGsKdEZwZUtyL0h5SlZVc1haVElVSzRJM1FJL1EvRi9iVEhFK3JJb1lTYXVpVkxoaEl6Ny9jaFA3WXhjbUJSQ1M1Zgo5Y0YwM3FsNURjaHlxZGFtV3hKTklJUGtJd0tCZ1FEVU4yb0NBamFLb1hYNkE2QlB1NnVKODVoU2FFelM2TWZjCkpwdUg2akFvZ2pQQnBsazRQWitRR1owdVhTVEZ5TWZ1SlB1MG00ZlRtUlBaNTIrczZueU1xTUhnaGMyaGs1SngKYmJMNmdoNnJqdmxPZ0V5REl3eEdqaGpaTEl2SktOV1JWNWhmbEw0Qk1ma0t0bUpWMUg3UXFTc1BCS0Y4cno1cApJZEhEN2ZSMTl3S0JnQkJzN2x2TDFkVE04eTVKbDZ1TzYxZGNPSkdhMnJ3VjkwU0g3WE5YTno0T2JYdjRjNy80CldxSDRCYy9KSzBZeitSU00rUEVwUWhUYmhLVTRtVlNrSTM4c01UbVdLMXhKeXQxQnpGckg3ZnhTVStMMUlpd3oKUTAwNGM4Q1NKYm5VREF4b0MrR2xoL2ZKN0ZvdzAyTUNyMlYrLzVURnRzandPUWNWN0NZeXlzZ2xBb0dBRUZZWAp0Z0hmbXZwazc1TVo0eWxxUWh0YmJYU1QvV1JvQmoxK21ZN2dtQzIxdUVHSytyWmJzeWNWbjMwU0dKdWxNR0x1CmNXL0xtL0Zid3RsN0VrK1d1T2xBeTN6aFlIL1F0U1NoczRFU3hWZ2pQdlRIYnd6aXBBZktSK1dTK1RCSWlJQzYKdlJqaEs0eGlSSDNYd2cyeW1YTjhXaEtjTDlINXR2UWdocm1wcU84Q2dZRUFxM2JGckYyaHMvNXVoWGQvRndpQgoyN1Jtd3hZZzk4WHkrOGMvSzJlemZHd1YzdVhYd2NKQnhiTk5QbnJlN3kyRVJXcG44VHdLL1g5NmZEYjU5RWNHCmwxZVhnRlJEdHdOZ0szQXl6ZWU1NEpta3JuYld6OVVsci9OQ2ROajNLRFhUWERPc0Q0ZVlJOHVTUlNxVmN2NlcKSlYrV3ZJcFRlbkFUNXFXcDZ1b2JHWGM9Ci0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0K
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: tigera-secure-container-admission-controller
+  namespace: tigera-image-assurance
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: tigera-secure-container-admission-controller
+  namespace: tigera-image-assurance
+rules:
+  - apiGroups:
+      - "containersecurity.tigera.io"
+    resources:
+      - "containeradmissionpolicies"
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - ""
+    resources:
+      - namespaces
+    verbs:
+      - get
+      - list
+      - watch
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: tigera-secure-container-admission-controller
+  namespace: tigera-image-assurance
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: tigera-secure-container-admission-controller
+subjects:
+- kind: ServiceAccount
+  name: tigera-secure-container-admission-controller
+  namespace: tigera-image-assurance
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    k8s-app: tigera-image-assurance-admission-controller
+  name: tigera-image-assurance-admission-controller
+  namespace: tigera-image-assurance
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      name: tigera-image-assurance-admission-controller
+  template:
+    metadata:
+      labels:
+        k8s-app: tigera-image-assurance-admission-controller
+        name: tigera-image-assurance-admission-controller
+    spec:
+      serviceAccountName: tigera-secure-container-admission-controller
+      hostNetwork: true
+      dnsPolicy: ClusterFirstWithHostNet
+      containers:
+        - image: quay.io/tigera/image-assurance-admission-controller:v1.2.1
+          imagePullPolicy: IfNotPresent
+          name: tigera-image-assurance-admission-controller
+          env:
+            - name: IMAGE_ASSURANCE_ORGANIZATION_ID
+              valueFrom:
+                configMapKeyRef:
+                  key: organizationID
+                  name: tigera-image-assurance-config
+            - name: IMAGE_ASSURANCE_LOG_LEVEL
+              value: INFO
+            - name: IMAGE_ASSURANCE_BAST_APIURL
+              value: "https://tigera-image-assurance-api.tigera-image-assurance.svc:9443"
+            - name: IMAGE_ASSURANCE_BAST_API_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  key: token
+                  name: tigera-image-assurance-admission-controller-api-access
+          ports:
+            - containerPort: 8080
+          volumeMounts:
+            - mountPath: /certs/https/
+              name: certs
+              readOnly: true
+            - mountPath: /certs/bast
+              name: tigera-secure-bast-server-tls
+              readOnly: true
+      imagePullSecrets:
+        - name: tigera-pull-secret
+      volumes:
+        - name: certs
+          secret:
+            defaultMode: 420
+            items:
+              - key: tls.crt
+                path: cert.pem
+              - key: tls.key
+                path: key.pem
+            secretName: tigera-image-assurance-admission-controller-certs
+        - name: tigera-secure-bast-server-tls
+          secret:
+            defaultMode: 420
+            items:
+              - key: tls.crt
+                path: tls.crt
+            secretName: tigera-image-assurance-api-cert
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: tigera-image-assurance-admission-controller-service
+  namespace: tigera-image-assurance
+  labels:
+    k8s-app: tigera-image-assurance-admission-controller-service
+spec:
+  selector:
+    k8s-app: tigera-image-assurance-admission-controller
+  ports:
+    - port: 8089
+      targetPort: 8080
+      protocol: TCP
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: tigera-bast-to-guardian-proxy
+  namespace: tigera-guardian
+spec:
+  selector:
+    k8s-app: tigera-guardian
+  ports:
+    - name: bast
+      port: 9443
+      protocol: TCP
+      targetPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: tigera-image-assurance-api
+  namespace: tigera-image-assurance
+spec:
+  externalName: tigera-bast-to-guardian-proxy.tigera-guardian.svc.cluster.local
+  sessionAffinity: None
+  type: ExternalName
+---
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingWebhookConfiguration
+metadata:
+  name: "image-assurance.tigera.io"
+webhooks:
+  - name: "image-assurance.tigera.io"
+    namespaceSelector:
+      matchExpressions:
+        - key: "tigera-admission-controller"
+          operator: "In"
+          values:
+            - "enforcing"
+    rules:
+      - apiGroups:   ["*"]
+        apiVersions: ["*"]
+        operations:  ["CREATE", "UPDATE"]
+        resources:   ["pods", "replicasets", "deployments", "statefulsets", "daemonsets", "jobs", "cronjobs"]
+        scope:       "Namespaced"
+    clientConfig:
+      service:
+        namespace: "tigera-image-assurance"
+        name: "tigera-image-assurance-admission-controller-service"
+        path: "/admission-review"
+        port: 8089
+      caBundle: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURoakNDQW02Z0F3SUJBZ0lKQVBieHk1amd5MlJWTUEwR0NTcUdTSWIzRFFFQkN3VUFNRkl4Q3pBSkJnTlYKQkFZVEFrZENNUXd3Q2dZRFZRUUlEQU5WVTBFeEREQUtCZ05WQkFjTUExVlRRVEVQTUEwR0ExVUVDZ3dHVkdsbgpaWEpoTVJZd0ZBWURWUVFMREExSlZDQkVaWEJoY25SdFpXNTBNQ0FYRFRJek1EVXdOREV6TlRZeE1Wb1lEekl4Ck1qTXdOREV3TVRNMU5qRXhXakJTTVFzd0NRWURWUVFHRXdKSFFqRU1NQW9HQTFVRUNBd0RWVk5CTVF3d0NnWUQKVlFRSERBTlZVMEV4RHpBTkJnTlZCQW9NQmxScFoyVnlZVEVXTUJRR0ExVUVDd3dOU1ZRZ1JHVndZWEowYldWdQpkRENDQVNJd0RRWUpLb1pJaHZjTkFRRUJCUUFEZ2dFUEFEQ0NBUW9DZ2dFQkFNMjF0dlJzQnZva2c1UU45L1VnCnZHYW1ud21XcGp5aWNvU0ZRQTZvU2hQYzhyb2QvMjhSaUR6aC9peXBwMmZqT1ZQTkVOcGw5Ykh3RmlOb0Nwbi8KYTBRQ3BjMnpTSXZYSzhYTUpIWE9taEpqZWxLZU5CZElCa0dWbkVpVzl5bkRWK2V6QXRrZmE0NjF2ZW5VcElDegptcU9ocnpuTFVySkNwbGQxd3g2ODdvdnpLK1hnMnRWSWYvZm8zd3Z5WXYycDJUa1dlYW1COWtBaXFzREk2VFk5ClMzMTBaSEg0c0dVYTVNNVJ2TDJuRnRnaWpLRU0xTjkxVVNtRFJ2QnRwM3VWVFQ3U2QxMldUaHUva2tlNDZtYjMKMlVSam1lUG5zL3BJNjRvbVQ1U2dycDFiZC9sZ0NuRks2UXhWMGdWNHRNZ3BXRHdoTGM4RFNqWTVMeE5aMlg3aApITVVDQXdFQUFhTmRNRnN3V1FZRFZSMFJCRkl3VUlKT2RHbG5aWEpoTFdsdFlXZGxMV0Z6YzNWeVlXNWpaUzFoClpHMXBjM05wYjI0dFkyOXVkSEp2Ykd4bGNpMXpaWEoyYVdObExuUnBaMlZ5WVMxcGJXRm5aUzFoYzNOMWNtRnUKWTJVdWMzWmpNQTBHQ1NxR1NJYjNEUUVCQ3dVQUE0SUJBUUFEVUs4UWFFQ1NnV2xpU0p2U3JkVmhNeURYOFFnVwpRdVh4YUIrZjJZOU9SSm5DU01zS3Rtcjl5aGQ4TTR5RGpWcE1hV0E0Y2ErTzR2d1ozYzUwbDZ2RHhYMEgxNHk2CjZtT1hzdGswbnd6NnJKTmI5OTNRWkNEWWZjTWZnVlo4a0RHTDZBRW5ZSExnZFZ1bWpSMWZXdk5kY3paMEU4aUYKZTA0aXRoQjBFOHRpY09xdVJmOCt0YnNZK2V5ei81TUpjMllkQnJVOXBSZ1VHeVNRcGRvaXpROWJHZ1lFTjVnKwo2dndockhBYTVPL2g0bVZROTlIeCtua0h4bkNIWk84aGxqV1E4UTVvU2pkTnR3TjI3YTJ0dHRJY2JRa2JNaU1iCk4wUFUvR3N1SENjQ3RJYTl1UnlMRkZyYW0xNzg1ejZSL1FJdEV6WTBJS0xiMEttOU9oVzJFd25TCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K"
+    admissionReviewVersions: ["v1", "v1beta1"]
+    sideEffects: None
+    timeoutSeconds: 5

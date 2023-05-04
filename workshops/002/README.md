@@ -29,9 +29,9 @@ Before [deploying the admission controller](https://docs.calicocloud.io/image-as
 
 ```
 curl https://installer.calicocloud.io/manifests/v3.16.1-5/manifests/generate-open-ssl-key-cert-pair.sh | bash
-sed -i '' "s/BASE64_CERTIFICATE/$(base64 < admission_controller_cert.pem)/g" workshops/002/tigera-image-assurance-admission-controller-deploy.yaml
-sed -i '' "s/BASE64_KEY/$(base64 < admission_controller_key.pem)/g" workshops/002/tigera-image-assurance-admission-controller-deploy.yaml
-kubectl create -f workshops/002/tigera-image-assurance-admission-controller-deploy.yaml
+sed -i '' "s/BASE64_CERTIFICATE/$(base64 < admission_controller_cert.pem)/g" workshops/002/02-admission-controller/tigera-image-assurance-admission-controller-deploy.yaml
+sed -i '' "s/BASE64_KEY/$(base64 < admission_controller_key.pem)/g" workshops/002/02-admission-controller/tigera-image-assurance-admission-controller-deploy.yaml
+kubectl create -f workshops/002/02-admission-controller
 ```
 
 Let's deploy the workshop applications.
