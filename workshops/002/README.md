@@ -21,8 +21,14 @@ docker pull quay.io/jsabo/log4shell-vulnerable-app:latest
 tigera-scanner scan quay.io/jsabo/log4shell-vulnerable-app:latest
 ```
 
+Update the `TOKEN` and `APIURL` with the values from Calico Cloud
+
 ```
 cp workshops/002/tigera-scanner.yaml ~/.tigera-scanner.yaml
+```
+
+```
+tigera-scanner scan quay.io/jsabo/log4shell-vulnerable-app:latest
 ```
 
 ### Admission Controller
