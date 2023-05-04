@@ -49,7 +49,7 @@ Error from server (Action 'Reject' enforced by ContainerPolicy reject-failed rul
 The deployment of the `java-app` will fail because the Admission Controller policy is preventing the deployment of vulnerable workloads.
 
 
-## Vulnerability Management
+### Vulnerability Management
 
 Our admission controller should prevent running applications with CVSS scores above 7.  These are the vulnerabilities with `critical` and `high` CVSS scores.  We want to override the policy that prevents the deployment of the `java-app` due to critical vulnerabilities so that we can access it.
 
