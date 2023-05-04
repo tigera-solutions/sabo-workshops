@@ -21,6 +21,10 @@ docker pull quay.io/jsabo/log4shell-vulnerable-app:latest
 tigera-scanner scan quay.io/jsabo/log4shell-vulnerable-app:latest
 ```
 
+```
+cp workshops/002/tigera-scanner.yaml ~/.tigera-scanner.yaml
+```
+
 ### Admission Controller
 
 Use policy to prevent vulnerable container images from being deployed.
