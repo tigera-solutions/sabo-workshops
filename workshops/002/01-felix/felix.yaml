@@ -4,14 +4,11 @@ kind: FelixConfiguration
 metadata:
   name: default
 spec:
-  awsSrcDstCheck: Disable
-  awsSecondaryIPSupport: Enabled
   flowLogsFlushInterval: 15s
   flowLogsFileAggregationKindForAllowed: 1
   flowLogsCollectTcpStats: true
   flowLogsEnableHostEndpoint: true
   dnsLogsFlushInterval: 15s
-  egressIPSupport: EnabledPerNamespaceOrPerPod
   logSeverityScreen: Info
   captureRotationSeconds: 3600
   l7LogsFlushInterval: 15s
