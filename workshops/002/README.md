@@ -13,6 +13,7 @@ Attend this in-depth, hands-on, AKS-focused security workshop with Microsoft Azu
 Adjust logging 
 
 ```
+kubectl apply -f workshops/002/netshoot.yaml
 kubectl apply -f workshops/002/01-felix
 ```
 
