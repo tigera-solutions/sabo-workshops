@@ -10,7 +10,9 @@ Attend this in-depth, hands-on, AKS-focused security workshop with Microsoft Azu
 
 ## Notes
 
-Adjust logging 
+### Initial Setup
+
+Adjust logging and deploy Netshoot 
 
 ```
 kubectl apply -f workshops/002/netshoot.yaml
