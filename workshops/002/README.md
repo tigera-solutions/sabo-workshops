@@ -53,7 +53,7 @@ kubectl create -f workshops/002/02-admission-controller
 Let's deploy the workshop applications.
 
 ```
-kubectl apply -f apps
+kubectl apply -f workshops/002/03-apps
 ```
 
 Notice the following error in the output.
@@ -71,6 +71,6 @@ Our admission controller should prevent running applications with CVSS scores ab
 
 ```
 kubectl label namespaces java-app tigera-admission-controller-
-kubectl apply -f apps/java-app.yaml
+kubectl apply -f workshops/002/03-apps/java-app.yaml
 ```
 
